@@ -9,19 +9,20 @@ const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer>
-        
+    <NavigationContainer>        
         <Drawer.Navigator initialRouteName='Accueil'>
 
-          <Drawer.Screen name="Accueil" component={HomeScreen} />
+          <Drawer.Screen name="Accueil" component={HomeScreen} options={{
+                drawerLabel: () => null,
+                title: null,
+                drawerIcon: () => null
+            }} /> 
           <Drawer.Screen name="Ada LOVELACE" component={AdaScreen} />
           <Drawer.Screen name="Personnage" component={PersonnageScreen} />
           <Drawer.Screen name="Biographie" component={BiographieScreen} />
 
         </Drawer.Navigator>
-
     </NavigationContainer>
-  );
-}
+)}
 
 export default App
