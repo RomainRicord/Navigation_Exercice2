@@ -1,12 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeScreen from './src/screens/HomeScreen';
+import AdaScreen from './src/screens/AdaScreen';
+import PersonnageScreen from './src/screens/PersonnageScreen';
+import BiographieScreen from './src/screens/BiographieScreen';
 
-export default function App() {
+const Drawer = createDrawerNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+        
+        <Drawer.Navigator initialRouteName='Accueil'>
+
+          <Drawer.Screen name="Accueil" component={HomeScreen} />
+          <Drawer.Screen name="Ada LOVELACE" component={AdaScreen} />
+          <Drawer.Screen name="Personnage" component={PersonnageScreen} />
+          <Drawer.Screen name="Biographie" component={BiographieScreen} />
+
+        </Drawer.Navigator>
+
+    </NavigationContainer>
   );
 }
 
