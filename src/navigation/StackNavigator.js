@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 const StackNavigator = () => {
     return(
         <Stack.Navigator 
-        initialRouteName='Drawer'
+        initialRouteName='Home'
         screenOptions={{
             headerShown: false
         }}

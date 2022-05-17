@@ -32,7 +32,7 @@ const CustomDrawerContent = (props) => {
 
 const DrawerNavigator = () => {
     return(
-       <Drawer.Navigator initialRouteName='Biographie'
+       <Drawer.Navigator initialRouteName='Ada LOVELACE'
         useLegacyImplementation
         screenOptions={{
             drawerActiveTintColor:'#e91e63',

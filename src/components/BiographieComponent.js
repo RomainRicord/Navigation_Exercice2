@@ -1,6 +1,6 @@
 import {Text} from 'react-native'
 
-const BiographieComponent = () => <Text style={{margin:20,textAlign:'justify',padding:20,backgroundColor:"rgba(20,20,20,0.7)",fontSize:18,borderRadius:20,color:'white'}}>Ada était la seule fille légitime du poète George Gordon Byron et de son
+const BiographieComponent = () => <Text style={{margin:20,textAlign:'center',padding:20,backgroundColor:"rgba(20,20,20,0.7)",fontSize:18,borderRadius:20,color:'white'}}>Ada était la seule fille légitime du poète George Gordon Byron et de son
 épouse Annabella Milbanke, une femme intelligente et cultivée, cousine
 de Caroline Lamb, dont la liaison avec Byron fut à l'origine d'un
 scandale. Le premier prénom d'Ada, Augusta, aurait été choisi en hommage
