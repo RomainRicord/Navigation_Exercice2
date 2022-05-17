@@ -1,11 +1,11 @@
-import { View, Text } from "react-native";
+import { ImageBackground } from "react-native";
 import PersonnageComponent from "../components/PersonnageComponent";
 
 const PersonnageScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <ImageBackground source={{uri:require('../../assets/img/968994.jpg')}} style={{ flex: 1, justifyContent: "center", alignItems: "center" }}> 
       <PersonnageComponent/>
-    </View>
+    </ImageBackground>
   );
 };
 

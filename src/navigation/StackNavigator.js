@@ -6,9 +6,13 @@ const Stack = createStackNavigator();
 
 const StackNavigator = () => {
     return(
-    <Stack.Navigator screenOptions={{
-        headerShown: false
-      }}>
+        <Stack.Navigator 
+        initialRouteName='Drawer'
+        screenOptions={{
+            headerShown: false
+        }}
+        
+        >
         <Stack.Screen component={HomeScreen} name="Home" />
         <Stack.Screen component={DrawerNavigator} name="Drawer" />
     </Stack.Navigator>)
